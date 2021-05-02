@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antonio|Girassol|Sriracha">
+	<title>Corporate Theme 2</title>
+
+	<style type="text/css">
+
+		body > label, li {
+			font-family: rockwell;
+		}
+
+
+		label.logo {
+			color: black;
+			font-size: 40px;
+			line-height: 85px;
+			padding: 0 100px;
+			font-family: American Typewriter;
+		}
+
+		div > ul {
+			float: right;
+			margin-right: 30px;
+		}
+		 
+		 #contain {
+			background: #8D538D !important;
+			height: 60px;
+			width: 100%;
+		}
+
+
+		div ul li {
+			display: inline-block;
+			line-height: 40px;
+			margin: 0 5px;
+		}
+
+		div ul li a {
+			color: white;
+			font-size: 20px;
+			text-transform: uppercase;
+			padding: 7px 13px;
+			border-radius: 3px;
+		}
+		
+
+		a.navi, a:hover {
+			background: blue;
+			transition: 3s;
+		}
+
+		h3:hover {
+			text-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+			}
+			.card:hover{
+			box-shadow: 0 32px 64px 0 rgba(0,0,0,1.0);
+			}
+			a.navi,a:hover{
+			background: black;
+			transition: 3s;
+		}
+
+		h3 {
+			text-align: center;
+			font-family: Lucida Sans Unicode;
+			font-size: 30px;
+			}
+
+		#container {
+			width: 100%;
+			height: 100%;
+			display: grid; 
+			grid-template-columns: repeat(2, 110fr);
+			grid-gap: 10px 10px;
+			background-color: #00539CFF;
+			justify-content: center;
+			padding: 10px;
+
+			/*align-items: center;*/-
+		}
+
+		#container > div {
+			background-color: lightblue;
+			border: 1px solid cyan;
+			border: 1px;
+			/*height: 400px;*/
+			/*justify-content: center; */
+		}
+
+		#form {
+			padding: 20px;
+
+		}
+
+
+		#container1 {
+			width: 100%;
+			height: 100%;
+			display: grid; 
+			grid-template-columns: 70fr 140fr;
+			grid-gap: 10px 10px;
+			background-color: #00539CFF;
+			justify-content: center;
+			padding: 10px;
+		}
+
+		#selectfont  {
+			background-color: lightblue;
+			border: 1px;
+			padding: 20px;
+			/*height: 400px;*/
+			/*justify-content: center; */
+		}
+
+		.card {
+			background: url(images/CorporateT2.jpg);
+			background-position: center;
+			background-size: cover;
+			border-radius: 8px;
+			width: 700px;
+            height: 500px;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			text-align: center;
+			margin: auto;
+            padding: 10px;
+
+		}
+
+		h2 {
+			font-family: Brush Script MT;
+			font-size: 5em;
+		}
+
+	
+</style>
+<script type="text/javascript">
+	
+	function Preview(){
+
+			var greet = document.getElementById("greet");
+			var event = document.getElementById("event");
+			var recipient = document.getElementById("recipient");
+			var from = document.getElementById("from");
+			var date = document.getElementById("date");
+			var time = document.getElementById("time");
+			var venue = document.getElementById("venue");
+
+			var greet1 = document.getElementById("greet1");
+			var event1 = document.getElementById("event1");
+			var recipient1 = document.getElementById("recipient1");
+			var from1 = document.getElementById("from1");
+			var date1 = document.getElementById("date1");
+			var time1 = document.getElementById("time1");
+			var venue1 = document.getElementById("venue1");
+
+			localStorage.setItem("greet",greet.value);
+			localStorage.setItem("event",event.value);
+			localStorage.setItem("recipient",recipient.value);
+			localStorage.setItem("from",from.value);
+			localStorage.setItem("date",date.value);
+			localStorage.setItem("time",time.value);
+			localStorage.setItem("venue",venue.value)
+
+
+			greet1.innerHTML = localStorage.getItem("greet");
+			event1.innerHTML = localStorage.getItem("event");
+			recipient1.innerHTML = localStorage.getItem("recipient");
+			from1.innerHTML = localStorage.getItem("from");
+			date1.innerHTML = localStorage.getItem("date");
+			time1.innerHTML = localStorage.getItem("time");
+			venue1.innerHTML = localStorage.getItem("venue");
+		}
+	
+	function load(){
+
+
+			var greet = document.getElementById("greet");
+			var event = document.getElementById("event");
+			var recipient = document.getElementById("recipient");
+			var from = document.getElementById("from");
+			var date = document.getElementById("date");
+			var time = document.getElementById("time");
+			var venue = document.getElementById("venue");
+
+
+			greet1.innerHTML = localStorage.getItem("greet");
+			event1.innerHTML = localStorage.getItem("event");
+			recipient1.innerHTML = localStorage.getItem("recipient");
+			from1.innerHTML = localStorage.getItem("from");
+			date1.innerHTML = localStorage.getItem("date");
+			time1.innerHTML = localStorage.getItem("time");
+			venue1.innerHTML = localStorage.getItem("venue");
+
+		}
+
+
+		function favourite() {
+
+			var greet1 = document.getElementById("greet1");
+			var event1 = document.getElementById("event1");
+			var recipient1 = document.getElementById("recipient1");
+			var from1 = document.getElementById("from1");
+			var date1 = document.getElementById("date1");
+			var time1 = document.getElementById("time1");
+			var venue1 = document.getElementById("venue1");
+
+
+
+			localStorage.setItem("greet1",greet1.value);
+			localStorage.setItem("event1",event1.value);
+			localStorage.setItem("recipient1",recipient1.value);
+			localStorage.setItem("from1",from1.value);
+			localStorage.setItem("date1",date1.value);
+			localStorage.setItem("time1",time1.value);
+			localStorage.setItem("venue1",venue1.value);
+
+		}
+
+
+		function stored() {
+
+			localStorage.setItem("assalamualikum", "assalamualikum ");
+			localStorage.setItem("hello", "hello ");
+			localStorage.setItem("You are Invited", "You are Invited");
+
+			document.getElementById("assalamualikum").innerHTML = localStorage.getItem("assalamualikum");
+			document.getElementById("hello").innerHTML = localStorage.getItem("hello");
+			document.getElementById("You are Invited").innerHTML = localStorage.getItem("You are Invited");
+		}
+
+			localStorage.setItem("assalamualikum", "assalamualikum ");
+			localStorage.setItem("hello", "hello ");
+			localStorage.setItem("You are Invited", "You are Invited");
+
+		// function font1(selectTag) {
+		//   var listValue = selectTag.options[selectTag.selectedIndex].text;
+		  
+		//   document.getElementById("greet1").style.fontFamily = listValue;
+		// }
+
+		// function font2(selectTag) {
+		//   var listValue = selectTag.options[selectTag.selectedIndex].text;
+		  
+		//    document.getElementById("event1").style.fontFamily = listValue;
+		// }
+
+		// function font3(selectTag) {
+		//   var listValue = selectTag.options[selectTag.selectedIndex].text;
+		  
+		//     document.getElementById("recipient1").style.fontFamily = listValue;
+		// }
+
+		// function font4(selectTag) {
+		//   var listValue = selectTag.options[selectTag.selectedIndex].text;
+		  
+		//   document.getElementById("from1").style.fontFamily = listValue;
+		//  }
+
+		//  function font5(selectTag) {
+		//   var listValue = selectTag.options[selectTag.selectedIndex].text;
+		  
+		//   document.getElementById("venue1").style.fontFamily = listValue;
+		//  }
+
+		  var fs =  1;
+		
+		function textResizer1(){
+
+		var paragraph = document.querySelectorAll(".fontsize1");
+		for (var i = 0; i < paragraph.length; i++) {
+		fs=fs+1;
+		paragraph[i].style.fontSize=fs+"em";
+	}
+
+
+}
+		function reducesize1(){
+			if (fs == 1) {
+				for (var i = 0; i < paragraph.length; i++) {
+		paragraph[i].style.fontSize="1em";
+	}
+			}
+			else {
+				fs=fs-1;
+		var paragraph = document.querySelectorAll(".fontsize1");
+		for (var i = 0; i < paragraph.length; i++) {
+		paragraph[i].style.fontSize=fs+"em";
+	}
+
+	}
+}
+
+	var fs =  1;
+
+	function textResizer2(){
+
+		var paragraph = document.querySelectorAll(".fontsize2");
+		for (var i = 0; i < paragraph.length; i++) {
+		fs=fs+1;
+		paragraph[i].style.fontSize=fs+"em";
+	}
+
+
+}
+
+		function reducesize2(){
+			if (fs == 1) {
+				for (var i = 0; i < paragraph.length; i++) {
+		paragraph[i].style.fontSize="1em";
+	}
+			}
+			else {
+				fs=fs-1;
+		var paragraph = document.querySelectorAll(".fontsize2");
+		for (var i = 0; i < paragraph.length; i++) {
+		paragraph[i].style.fontSize=fs+"em";
+	}
+
+	}
+}
+
+	var fs =  1;
+
+	function textResizer3(){
+
+		var paragraph = document.querySelectorAll(".fontsize3");
+		for (var i = 0; i < paragraph.length; i++) {
+		fs=fs+1;
+		paragraph[i].style.fontSize=fs+"em";
+	}
+
+
+}
+
+		function reducesize3(){
+			if (fs == 1) {
+				for (var i = 0; i < paragraph.length; i++) {
+		paragraph[i].style.fontSize="1em";
+	}
+			}
+			else {
+				fs=fs-1;
+		var paragraph = document.querySelectorAll(".fontsize3");
+		for (var i = 0; i < paragraph.length; i++) {
+		paragraph[i].style.fontSize=fs+"em";
+	}
+
+	}
+}
+
+	var fs =  1;
+
+	function textResizer4(){
+
+		var paragraph = document.querySelectorAll(".fontsize4");
+		for (var i = 0; i < paragraph.length; i++) {
+		fs=fs+1;
+		paragraph[i].style.fontSize=fs+"em";
+	}
+
+
+}
+
+		function reducesize4(){
+			if (fs == 1) {
+				for (var i = 0; i < paragraph.length; i++) {
+		paragraph[i].style.fontSize="1em";
+	}
+			}
+			else {
+				fs=fs-1;
+		var paragraph = document.querySelectorAll(".fontsize4");
+		for (var i = 0; i < paragraph.length; i++) {
+		paragraph[i].style.fontSize=fs+"em";
+	}
+
+	}
+}
+
+
+var fs =  1;
+
+	function textResizer5(){
+
+		var paragraph = document.querySelectorAll(".fontsize5");
+		for (var i = 0; i < paragraph.length; i++) {
+		fs=fs+1;
+		paragraph[i].style.fontSize=fs+"em";
+	}
+
+
+}
+
+
+
+
+		function reducesize5(){
+			if (fs == 1) {
+				for (var i = 0; i < paragraph.length; i++) {
+		paragraph[i].style.fontSize="1em";
+	}
+			}
+			else {
+				fs=fs-1;
+		var paragraph = document.querySelectorAll(".fontsize5");
+		for (var i = 0; i < paragraph.length; i++) {
+		paragraph[i].style.fontSize=fs+"em";
+	}
+
+	}
+}
+
+
+
+
+
+		function changeColor(color){
+			document.getElementById('cards').style.backgroundColor = color
+	}
+
+		function changer(image){
+			var card = document.getElementById('cards')
+			var path = "images/";  
+			if(image==1){
+				card.style.backgroundImage="url(images/CorporateT2.jpg)"
+			}
+			else if(image==2){
+				card.style.backgroundImage="url(images/CorporateT2.1.jpg)"
+			}
+			else if(image==3){
+				card.style.backgroundImage="url(images/CorporateT2.2.jpg)"
+			}
+			else if(image==4){
+				card.style.backgroundImage="url(images/CorporateT2.3.jpg)"
+			}
+
+		}
+
+
+		function allowDrop(ev) {
+		  ev.preventDefault();
+		}
+
+		function drag(ev) {
+		  ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+		function drop(ev) {
+		  ev.preventDefault();
+		  var data = ev.dataTransfer.getData("text");
+		  ev.target.appendChild(document.getElementById(data));
+		}
+
+				function changeFont(value){
+
+			var greet1 = document.getElementById("greet1");
+			if(value==1) {
+				greet1.style.fontFamily="Antonio";
+			}
+			else if(value==2) {
+				greet1.style.fontFamily="Girassol";
+			}
+			else if(value==3) {
+				greet1.style.fontFamily="Sriracha";
+			}
+		}
+			// else if(value==4) {
+			// 	greet1.style.fontFamily="Caveat";
+			// }
+			// else if(value==5) {
+			// 	greet1.style.fontFamily="Permanent Marker";
+			// }
+
+			function changeFont1(value){
+			var event1 = document.getElementById("event1");
+			if(value==1) {
+				event1.style.fontFamily="Antonio";
+			}
+			else if(value==2) {
+				event1.style.fontFamily="Girassol";
+			}
+			else if(value==3) {
+				event1.style.fontFamily="Sriracha";
+			}
+		}
+
+	function changeFont2(value){
+			var recipient1 = document.getElementById("recipient1");
+			if(value==1) {
+				recipient1.style.fontFamily="Antonio";
+			}
+			else if(value==2) {
+				recipient1.style.fontFamily="Girassol";
+			}
+			else if(value==3) {
+				recipient1.style.fontFamily="Sriracha";
+			}
+		}
+
+function changeFont3(value){
+			var from1 = document.getElementById("from1");
+			if(value==1) {
+				from1.style.fontFamily="Antonio";
+			}
+			else if(value==2) {
+				from1.style.fontFamily="Girassol";
+			}
+			else if(value==3) {
+				from1.style.fontFamily="Sriracha";
+			}
+
+		}
+
+		function changeFont4(value){
+			var venue1 = document.getElementById("venue1");
+			if(value==1) {
+				venue1.style.fontFamily="Antonio";
+			}
+			else if(value==2) {
+				venue1.style.fontFamily="Girassol";
+			}
+			else if(value==3) {
+				venue1.style.fontFamily="Sriracha";
+			}
+
+		}
+
+
+</script>
+</head>
+<body>
+
+	<div id="contain">
+		<label class="logo">Lilac e-Cards</label>	
+			<ul id="navi">
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a class="active" href="Corporate.html">Themes</a></li>
+			</ul>
+	</div>
+
+	<div style="background-color: #C8A2C8;" align="center">
+
+		<h2 align="center">Corporate Card Customization: <strong>Theme 2</strong></h2>
+
+	</div>
+
+	<div id="container">
+
+		<div id="form"> 
+
+		<label>Greetings :</label>
+		<input type="text" id="greet" placeholder="Enter Greetings"  >
+		<br><br>
+		<label>Event :</label>
+		<input type="event" id="event" placeholder="Enter Event" >
+		<br><br>
+		<label>Recipient Name :</label>
+		<input type="recipient" id="recipient" placeholder="Enter Name recipient">
+		<br><br>
+		<label>From :</label>
+		<input type="from" id="from" placeholder="Enter From">
+		<br><br>
+		<label >Date :</label>
+		<input type="date" name="date" id="date" >
+		<label>Time :</label>
+		<input type="time" name="time" id="time">
+		<br><br>
+		<label>Venue :</label>
+		<input type="venue" id="venue" placeholder="Enter the venue" >
+		
+		<br><br>
+		<button onclick="Preview()">Preview</button>
+				<button onclick="load()">Load</button>
+
+
+		</div>
+
+		<div style="padding: 20px;">
+
+			<p style="font-size: 20px; font-weight: bold; text-align: center;" > Greetings  text list (Drag it to the forms) :</p>
+			<p style=" font-size: 30px; text-align: center;  font-weight: bold;" id="assalamualikum" draggable="true" ondragstart="drag(event)" id="assalamualikum" > assalamualikum </p>
+			<p style=" font-size: 50px; text-align: center; " id="hello" draggable="true" ondragstart="drag(event)" id="hello" > hello </p>
+			<p style=" font-size: 30px; text-align: center;  font-weight: bold"  id="You are Invited " draggable="true" ondragstart="drag(event)" id="You are Invited "> You are Invited </p>
+
+
+
+		</div>
+	
+	</div>
+
+<div id="container1">
+
+
+	<div id="selectfont">
+
+		<br><br>
+		<label>Select here to change the background and tab on the card</label>
+		<br>
+		<input type="Color" name="color" onchange="changeColor(this.value)">
+		<br><br>
+		<label>Select here to change the background image</label>
+		<br>
+			<select onchange="changer(this.value)">
+		<option value="0">Please select</option> <!-- this will always on top as default  -->
+		<option value="1">Sample 1</option>
+		<option value="2">Sample 2</option>
+		<option value="3">Sample 3</option>
+		<option value="4">Sample 4</option>
+			</select>
+		<br>
+		<br><br>
+			<p><strong> Greeting text Font :</strong></p>
+
+    		 <input type="radio" id="font1" name="choice" value="1" onclick="changeFont(this.value)">Antonio
+    		 <br>
+			 <input type="radio" id="font2" name="choice" value="2" onclick="changeFont(this.value)">Girassol
+			 <br>
+			 <input type="radio" id="font3" name="choice" value="3" onclick="changeFont(this.value)">Sriracha
+		
+
+			<button onclick="textResizer1()">+A</button>
+			<button onclick="reducesize1()">-A</button>
+
+
+			<p><strong> Event text Font :</strong></p>
+    		 <input type="radio" id="font1" name="choice" value="1" onclick="changeFont1(this.value)">Antonio
+    		 <br>
+			 <input type="radio" id="font2" name="choice" value="2" onclick="changeFont1(this.value)">Girassol
+			 <br>
+			 <input type="radio" id="font3" name="choice" value="3" onclick="changeFont1(this.value)">Sriracha
+
+			<button onclick="textResizer2()">+A</button>
+			<button onclick="reducesize2()">-A</button>
+
+			<p> <strong>Recipient Name text Font :</strong></p>
+    		 <input type="radio" id="font1" name="choice" value="1" onclick="changeFont2(this.value)">Antonio
+    		 <br>
+			 <input type="radio" id="font2" name="choice" value="2" onclick="changeFont2(this.value)">Girassol
+			 <br>
+			 <input type="radio" id="font3" name="choice" value="3" onclick="changeFont2(this.value)">Sriracha
+		
+			<button onclick="textResizer3()">+A</button>
+			<button onclick="reducesize3()">-A</button>
+
+			<p> <strong>From name text Font :</strong></p>
+    		 <input type="radio" id="font1" name="choice" value="1" onclick="changeFont3(this.value)">Antonio
+    		 <br>
+			 <input type="radio" id="font2" name="choice" value="2" onclick="changeFont3(this.value)">Girassol
+			 <br>
+			 <input type="radio" id="font3" name="choice" value="3" onclick="changeFont3(this.value)">Sriracha
+
+			<button onclick="textResizer4()">+A</button>
+			<button onclick="reducesize4()">-A</button>
+
+			<p><strong>Venue text Font :</strong></p>
+    		 <input type="radio" id="font1" name="choice" value="1" onclick="changeFont4(this.value)">Antonio
+    		 <br>
+			 <input type="radio" id="font2" name="choice" value="2" onclick="changeFont4(this.value)">Girassol
+			 <br>
+			 <input type="radio" id="font3" name="choice" value="3" onclick="changeFont4(this.value)">Sriracha
+
+			<button onclick="textResizer5()">+A</button>
+			<button onclick="reducesize5()">-A</button>
+
+			<br><br>
+
+			<div>
+
+			<br><br>
+
+			<button onclick="favourite()">favourite</button>
+
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+			
+
+			  <button onclick="document.getElementById('id01').style.display='block'" >Send</button>
+
+			  <div id="id01" class="w3-modal w3-animate-opacity">
+			    <div class="w3-modal-content w3-card-4">
+			      <header class="w3-container w3-teal" > 
+			        <span onclick="document.getElementById('id01').style.display='none'" 
+			        class="w3-button w3-large w3-display-topright">&times;</span>
+			        <h2>Thank You for choosing our website!</h2>
+			      </header>
+			      <div class="w3-container">
+			        <p>your card has been sent successfully to the recipient</p>
+			      </div>
+			      <footer class="w3-container w3-teal">
+			        <p></p>
+			      </footer>
+			    </div>
+			  </div>
+			</div>
+			<!-- w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_fade - the reference for this pop up modal -->
+
+
+		</div>
+
+		<div>
+
+			<br> <br>
+
+	<div id="cards" class="card" > 
+
+
+
+		<div id="greet1" contenteditable="true" class="fontsize1"></div>
+		<br><br>
+		<div id="event1" contenteditable="true" class="fontsize2" ></div>
+		<br><br>
+		<div id="recipient1" contenteditable="true" class="fontsize3"   ></div>
+		<br><br>
+		<div id="from1" contenteditable="true" class="fontsize4"   ></div>
+		<br><br>
+		<div id="date1" contenteditable="true"  id="div1" ></div>
+		<div id="time1" contenteditable="true"  id="div1"></div>
+		<br><br>
+		<div id="venue1" contenteditable="true" class="fontsize5"  ></div>
+
+	</div>
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>
